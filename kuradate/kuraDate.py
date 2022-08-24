@@ -23,15 +23,15 @@ print("Hello " + person1 + " What would you like as your main course?")
 person1Food = input(foodOption)
 person1FoodPrice = 50
 
-tomImage = Image.open("/Users/bikigurung/Desktop/Kura Labs/python-scripts/tom-food.jpeg");
-tomImage.show();
+tomImage = Image.open("tom-food.jpeg")
+tomImage.show()
 
 print("Hello " + person2 + " What would you like as your main course?")
 person2Food = input(foodOption)
 person2FoodPrice = 30
 
-jerryImage = Image.open("/Users/bikigurung/Desktop/Kura Labs/python-scripts/jerryfood.gif");
-jerryImage.show();
+jerryImage = Image.open("jerryfood.gif")
+jerryImage.show()
 
 dateRating1 = int(input("Hello " + person1 + " what rating would you give from 1-5 ?"))
 print(dateRating1)

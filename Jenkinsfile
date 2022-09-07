@@ -3,9 +3,9 @@ pipeline {
   stages {
     stage ('Build') {
       steps {
-      sh 'echo "HELLO WORLD"'
+      sh 'echo "HELLO B2"'
       sh '''
-        echo "This will list current dir content from latest"
+        echo "This is B2"
         ls -lh
         '''
       }

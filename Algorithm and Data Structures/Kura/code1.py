@@ -1,23 +1,30 @@
-def checkBalance(string):
+def checkBalance(givenInput):
 
-    length = len(string)
-    print(length)
+    length = len(givenInput)
 
     # check if the number is even if not return false
     if (length % 2) != 0:
         return False
     
+    pairs = {
+        "{":"}",
+        "(":")",
+        "[":"]"
+    }
     
-    for i in range(int(length/2)):
-        if string[i] == '{' and string[length-i-1] != "}":
+    for i in range(len(givenInput)//2):
+        if pairs[givenInput[i]] != givenInput[len(givenInput)-i-1]:
             return False
-        elif string[i] == '[' and string[length-i-1] != "]":
-            return False
-        elif string[i] == '(' and string[length-i-1] != ")":
-            return False
-        else:
-           pass
     return True
 
 
-print(checkBalance("{[({[(})]})]}"))
+print(checkBalance("{[([])]}"))
+
+ # if string[i] == '{' and string[length-i-1] != '}':
+#     return False
+# elif string[i] == '[' and string[length-i-1] != ']':
+#     return False
+# elif string[i] == '(' and string[length-i-1] != ')':
+#     return False
+# else:
+#    pass

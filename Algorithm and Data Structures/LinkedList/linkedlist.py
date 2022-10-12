@@ -11,4 +11,3 @@ c = Node(3)
 a.nextNode = b
 b.nextNode = c
 c.nextNode = None
-

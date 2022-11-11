@@ -1,0 +1,1 @@
+docker run -v /Users/bikigurung/Desktop/KuraLabScripts/groupproject/app:/app/ --name groupdockerapp -ti python bash

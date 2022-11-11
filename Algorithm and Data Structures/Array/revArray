@@ -1,8 +1,0 @@
-def reverseNum(num):
-    n = list(str(num))
-    print(n.reverse())
-    
-    return 0
-
-
-print(reverseNum(321))

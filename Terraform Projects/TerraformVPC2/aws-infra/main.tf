@@ -20,6 +20,6 @@ module "createSG" {
 
 module "createInstance" {
     source ="./modules/ec2"
-    module.aws_subnet.
+    # module.aws_subnet.
 
 }

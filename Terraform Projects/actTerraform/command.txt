@@ -1,7 +1,0 @@
-terraform init \
--backend-config="bucket=bgurung2022-tfstate" \
--backend-config="key=testdb/app.state" \
--backend-config="region=us-east-1" \
--backend-config="dynamodb_table=bgurung2022-tfstatelock" \
--backend-config="access_key=AKIAQET7ZOKPQKXA3VUL" \
--backend-config="secret_key=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"

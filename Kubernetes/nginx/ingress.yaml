@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  creationTimestamp: "2022-11-17T01:47:05Z"
+  generation: 1
+  name: webserver
+  namespace: default
+  uid: f7960bbb-030e-4e3c-b6cc-7d3e73a8423f
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          service:
+            name: webserver
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
+status:
+  loadBalancer: {}
